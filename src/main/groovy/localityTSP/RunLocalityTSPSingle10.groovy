@@ -4,7 +4,7 @@ import locality_model.LocalityEngine
 import locality_model.LocalityProblemSpecification
 
 def tspProblem = new LocalityProblemSpecification()
-tspProblem.nodes = 4
+tspProblem.nodes = 8
 tspProblem.instances = 11
 tspProblem.dataFileName = "./10cities.tsp"
 tspProblem.populationClass = LocalityTSPPopulation.getName()

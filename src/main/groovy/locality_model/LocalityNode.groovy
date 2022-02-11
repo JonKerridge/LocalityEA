@@ -101,6 +101,13 @@ class LocalityNode implements CSProcess {
       populationAtNode.population[overwrite1].evaluateFitness(evaluateData)
       populationAtNode.population[overwrite2].evaluateFitness(evaluateData)
 
+//      println "parent1 $parent1 = ${populationAtNode.population[parent1].toString()}"
+//      println "parent2 $parent2 = ${populationAtNode.population[parent2].toString()}"
+//      println "child1 $child1 = ${populationAtNode.population[child1].toString()}"
+//      println "child2 $child2 = ${populationAtNode.population[child2].toString()}"
+//      println "overwrite1 $overwrite1 = ${populationAtNode.population[overwrite1].toString()}"
+//      println "overwrite2 $overwrite2 = ${populationAtNode.population[overwrite2].toString()}"
+
       // now initialise any intermediate individuals not otherwise initialised ie ppn > 4
       otherIndividuals.each {
         populationAtNode.population[it].initialise(rng)
