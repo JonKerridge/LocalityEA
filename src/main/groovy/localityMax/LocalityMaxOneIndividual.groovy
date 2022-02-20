@@ -25,6 +25,7 @@ class LocalityMaxOneIndividual implements LocalityIndividual{
   int fitness
   List <Integer> chromosome
   int geneLength
+  boolean converged
 
   // used to create an Individual with empty chromosome
   LocalityMaxOneIndividual (int geneLength){

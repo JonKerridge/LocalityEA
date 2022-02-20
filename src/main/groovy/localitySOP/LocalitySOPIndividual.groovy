@@ -11,6 +11,7 @@ class LocalitySOPIndividual implements LocalityIndividual{
    def fitness    // this can be any comparable type
    List chromosome
    int geneLength
+   boolean converged
 
    * A constructor that creates an empty individual is required, where genelength is the number
    * of elements in a chromosome which should be a list that is set to the empty List<br>
@@ -20,11 +21,12 @@ class LocalitySOPIndividual implements LocalityIndividual{
    * fitness is the current value of the fitness function applied to this individual
    * chromosome is the set of values that make up the individuals data points
    * geneLength is the number of elements in the chromosome
-   * replacements is filled when a solution is foun and contains the number fo times a replace operation was carried out
-   */
+   * converged indicates whether a solution has converged after maxGenerations reached
+    */
   int fitness
   List chromosome
   int geneLength
+  boolean converged
   List <List> distances
   Map precedences
   boolean initialised = false

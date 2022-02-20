@@ -87,6 +87,7 @@ class LocalityRoot implements CSProcess{
           if (bestSoFarFitness <= convergenceLimit) {
             converged = true
             result = populationData.population[bestSoFarLocation]
+            result.converged = true
           }
           else {
             bestFitIndex = bestSoFarLocation
@@ -102,6 +103,7 @@ class LocalityRoot implements CSProcess{
           if (bestSoFarFitness >= convergenceLimit) {
             converged = true
             result = populationData.population[bestSoFarLocation]
+            result.converged = true
           }
           else {
             bestFitIndex = bestSoFarLocation
@@ -146,6 +148,10 @@ class LocalityRoot implements CSProcess{
         determineConvergence(outcomes)
 //        println "generation finished $generationCount"
       } //end while loop
+      if (!converged) {
+        result = populationData.population[bestFitIndex]
+        result.converged = false
+      }
       // write outcome to CollectSolution
       long seedValue = specification.seeds[0]
       output.write([seedValue, result, generationCount, replacements])

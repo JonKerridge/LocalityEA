@@ -67,17 +67,17 @@ class LocalityCollectSolution implements CSProcess{
         repData << replacements
         totalRep = totalRep + replacements
       } // end if
-      if (bestOutcome == null) {
+      if (!bestOutcome.converged) {
         none = none + 1
         outString = "$i, " +
             "${spec.toString()}, " +
-            "NONE, $replacements, $generations, $elapsed, $seedValue "
+            "NONE, $elapsed, $generations, $replacements, ${bestOutcome.toString()}, $seedValue "
       }
       else {
         found = found + 1
         outString = "$i, " +
             "${spec.toString()}, " +
-            "FOUND, $replacements, $generations, $elapsed, ${bestOutcome.toString()}, $seedValue "
+            "FOUND, $elapsed, $generations, $replacements, ${bestOutcome.toString()}, $seedValue "
       } // end if for bestOutcome test
       println "$outString"
 //      printWriter.println(outString) do not print out the intermediate values
