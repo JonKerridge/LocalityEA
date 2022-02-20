@@ -85,9 +85,9 @@ class LocalityProblemSpecification {
 //        "$geneLength, $crossoverPoints, " +
 //        "$maxGenerations, $crossoverProbability, " +
 //        "$mutationProbability, $convergenceLimit, $minOrMax, $seeds"
-    return "$nodes, $populationPerNode, $geneLength, " +
+    return "$dataFileName, $nodes, $populationPerNode, $geneLength, " +
         " $crossoverPoints, $crossoverProbability, " +
-        "$mutationProbability, $replaceInterval "
+        "$mutationProbability, $replaceInterval, $convergenceLimit, $maxGenerations,  "
   }
 
 }

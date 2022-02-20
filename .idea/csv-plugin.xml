@@ -38,7 +38,21 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="\src\main\groovy\localitySOP\Locality53-1Single.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="\src\main\groovy\localitySOP\Locality7Single.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\src\main\groovy\localitySOP\LocalitySOP7.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
