@@ -19,6 +19,7 @@ package locality_model
      def fitness    // this can be any comparable type
      List chromosome
      int geneLength
+     boolean converged
 
      * A constructor that creates an empty individual is required, where genelength is the number
      * of elements in a chromosome which should be a list that is set to the empty List<br>
@@ -28,7 +29,7 @@ package locality_model
      * fitness is the current value of the fitness function applied to this individual
      * chromosome is the set of values that make up the individuals data points
      * geneLength is the number of elements in the chromosome
-     * replacements is filled when a solution is foun and contains the number fo times a replace operation was carried out
+     * converged is true if a solution is found that has satisfied converges, false otherwise
      */
 
 
